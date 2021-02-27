@@ -88,10 +88,11 @@ group :heroku, :production do
 end
 
 group :no_docker, :test, :development do
-  gem 'therubyracer', platform: :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
+  gem 'execjs', '~> 2.7'
+  # gem 'therubyracer', platform: :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
 end
 
-gem 'puma'
+gem 'puma', '~> 5.2', '>= 5.2.1'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'

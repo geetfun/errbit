@@ -103,5 +103,7 @@ gem 'underscore-rails'
 
 gem 'sucker_punch'
 
+gem 'mimemagic', '~> 0.4.3'
+
 ENV['USER_GEMFILE'] ||= './UserGemfile'
 eval_gemfile ENV['USER_GEMFILE'] if File.exist?(ENV['USER_GEMFILE'])
